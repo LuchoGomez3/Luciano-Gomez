@@ -1,0 +1,168 @@
+/*ESTILOS GLOBALES
+----------------------------------*/
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+.container-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    margin: 0;  
+}
+
+.Profile div h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.detalle-item h3 + p {
+    font-style: italic;
+}
+
+/*Simbolo de guion ondulado Alt + 126*/
+.detalle-item h3 ~ p {
+    margin: 0;
+}
+
+/*PERFIL
+----------------------------------*/
+header{
+    background-color: #2A324B;
+    color: #F2F4F8;
+
+}
+
+/*PROYECTOS
+----------------------------------*/
+.Projects a {
+    background-color: #343434;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.Projects a:hover {
+    opacity: 80%;
+}
+
+.projects-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.projects-item img{
+    width: 220px;
+    height: 230px;
+}
+.u-div > section:last-of-type {
+    border-bottom: none ;    
+}
+
+
+
+/*EXPERIENCIA
+----------------------------------*/
+.Work {
+    background-color: #B4CDED;
+}
+
+
+/*EDUCACION
+----------------------------------*/
+
+.Education {
+    background-image: url(Images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+/*CONTACTO
+----------------------------------*/
+footer {
+    background-color: #0D1821;
+    color: #F2F4F8;
+}
+
+.contacto {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacto a {
+    color: goldenrod;
+    padding: 40px;
+}
+
+/*RESPONSIVE
+----------------------------------*/
+
+@media screen and (min-width: 750px) {
+
+    header, footer {    
+        text-align: center;
+    }
+
+    .projects-item img{
+        float: left;
+        margin-right: 25px;
+    }
+    .trabajo-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        padding-right: 15px;
+    }
+    .contacto {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .Profile div h1{
+        font-size: 75px;
+        text-align: left;
+        margin-bottom: 15px;
+        line-height: 0.9;
+    }
+
+    .Profile div h2{
+        font-size: 35px;
+        line-height: 1;
+    }
+
+    .contacto a{
+        padding: 25px;
+    }
+}
